@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Se llama al archivo externo a través del atributo href que tiene link-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+   <header class="headerIndex">
+        <!--Colocación de la imagen principal de mi sitio web-->
+        <a href=""><img class="logo-tcs" src="../assets/img/logo-patagonia-footer.png_v=1677173627.png" alt=""></a>
+        <!--Barra principal de navegación de mi sitio web-->
+        <nav>
+            <ul class="navbar">
+                <!--Lista desordenada-->
+                <!--Se coloca numeral para no recargar el sitio-->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Producción ZZ</a></li>
+                <li><a href="./packaging.html">Producción Packaging</a></li>
+                <!--Este link redireccionaría a un número de teléfono para iniciar una conversación de Whatsapp.-->
+                <li><a href="https://web.whatsapp.com/">Contacto</a></li>
+                <li><a href="./indicadores.html">Indicadores</a></li>
+            </ul>
+        </nav>
+        <!--Con JavaScript debería modificarlo con button para que genere un evento-->
+        <a href="./iniciarsesion.html">
+            Iniciar sesión
+        </a>
+    </header>
+    <main>
+        <section class="produccionUno">
+                <img src="../assets/img/produccion-diaria.webp" alt="">
+                <article>
+                    <!--Título principal de la pestaña de producción-->
+                    <h1>Producción</h1>
+                    <p>El día Jueves 07/08/2025 la producción a realizar es de 1440 unidades de ZZW17V. Cantidad de
+                        ollas
+                        = 16</p>
+                </article>
+        </section>
+        <section class="produccionDos">
+            <div>
+                <div>
+                    <!--Coloco un div para agrupar los 2 elementos-->
+                    <div class="parrafoCinco">
+                        <h3>Cantidades por fórmula por Olla</h3>
+                        <ol>INS004: 75g</ol>
+                        <ol>INS1422: 500g</ol>
+                        <ol>IN002: 41175g</ol>
+                        <ol>INS957: 1500g</ol>
+                    </div>
+                    <div class="parrafoSeis">
+                        <h3>Cantidades consumidas</h3>
+                        <div class="formulario">
+                            <!--Formulario para que el usuario pueda ingresar las cantidades consumidas.-->
+                            <form action="" method="post">
+                                <label for="">INS004 (g):</label>
+                                <input type="number" name="INS004" id="INS004">
+                                <label for="">INS1422 (g):</label>
+                                <input type="number" name="INS1422" id="INS1422">
+                                <label for="">IN002 (g):</label>
+                                <input type="number" name="IN002" id="IN002">
+                                <label for="">INS957 (g):</label>
+                                <input type="number" name="IN002" id="INS957">
+                                <!--Botón de enviar.-->
+                                <input type="submit" value="Confirmar Producción">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

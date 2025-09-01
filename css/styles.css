@@ -1,0 +1,223 @@
+/*Clases que tienen un nombre clave*/
+/*Box - modeling. Ayuda a determinar el espacio que va a ocupar un elemento. Se distinguen 3 partes dentro del elemento
+Padding (interno)
+Border (limite de borde interno)
+margin (margen con respecto a las otras etiquetas)*/
+/*Medidas relativas. Se puede adaptar a los diferentes tamanos de pantalla
+% Podemos usarla en base al 100% del ancho de la pantalla
+rem, nos ayuda a trabajar el tama;o de fuentes en los dispositivos moviles.*/
+
+/*Se genera el reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+/*Header*/
+.headerIndex {
+    /*Que ocupe el 100% del ancho de pantalla*/
+    width: 100%;
+    background-color: rgba(220, 219, 165, 0.388);
+    position:fixed;
+    top: 0px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    /*Coloco los elementos uno al lado del otro*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+/*Flexbox funciona con el concepto de padre e hijo. Se le va a aplicar a una etiqueta contenedora la propiedad flex y va a afectar unicamente a sus hijos directos.*/
+.logo-tcs{
+    width: 6.25rem; /*Ancho del logo*/  
+}
+.imagen-principal{
+    width: 100%; /*Ancho. Se utiliza % para que se ajuste al contenedor section-principal*/  
+}
+.parrafoTres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*Se separa de forma equitativa tanto en los margenens como entre las cards.*/ 
+    justify-content: space-evenly;
+    height: 31.25rem;
+    background-color: lightblue;
+    /*Align me permite mover los elementos del contenedor de arriba hacia abajo*/
+    align-items: center; 
+}
+
+
+.info-pagina{
+    background-color: rgb(212, 255, 205);
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 1.25rem;    
+}
+
+.html{
+    font-size: 16px; /*16px - 1rem*/
+}
+
+.parrafoUno {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(../assets/img/imagen-principal.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoDos {
+    text-align: center;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.25rem;
+}
+
+.parrafoUno h1 {
+    text-align: left;
+}
+
+.parrafoUno p {
+    text-align: left;
+}
+
+/*Propiedades generales*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*  font-family: "Lobster Two", sans-serif;*/
+
+/*Barra de navegación*/
+.navbar {
+    list-style: none;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline; /*Por defecto una etiqueta puede ser inline o block.
+    Inline son las etiquetas que por defecto solamente ocupan el espacio de su contenido dentro del documento.
+    Block son aquellas que ocupan el 100% del ancho en el documento.*/
+    display: flex;
+    gap: 1.25rem;
+}
+
+
+
+
+
+/*Título principal*/
+h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/*Primer párrafo*/
+.produccionUno {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.produccionUno {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.produccionUno article {
+    width: 50%;   
+    align-self: center; 
+}
+.produccionUno article h1{
+    font-size: 1.875rem;    
+}
+.produccionUno article p{
+    width: 40%;   
+}
+.produccionUno img {width: 50%; /*Ancho del logo*/  }
+
+/*Segundo párrafo*/
+.parrafoDos h4 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.parrafoDos h2 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.parrafoDos p {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*Tercer párrafo*/
+.parrafoTres h3 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.parrafoTres p {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*Cuarto párrafo*/
+.parrafoCuatro {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 1.1875rem;
+    background-color: aqua;
+    /*box-model*/
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 1.875rem;
+    margin: 1.25rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*Quinto párrafo*/
+.parrafoCinco h3 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.parrafoCinco ol {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*Sexto párrafo*/
+.parrafoSeis h3 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.formulario {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
