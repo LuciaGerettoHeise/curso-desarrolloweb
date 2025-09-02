@@ -7,12 +7,17 @@ margin (margen con respecto a las otras etiquetas)*/
 % Podemos usarla en base al 100% del ancho de la pantalla
 rem, nos ayuda a trabajar el tama;o de fuentes en los dispositivos moviles.*/
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*  font-family: "Lobster Two", sans-serif;*/
+
 /*Se genera el reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
+
+
 .body-iniciarsesion {font-family: Arial, sans-serif;
 background: #fff;
 color:#000;
@@ -44,12 +49,41 @@ margin-bottom: 5px;}
 padding: 12px;
 border: 1px solid #ccc;}
 
-.container buttons{display: grid;
+.buttons {display: grid;
 grid-template-columns: 1fr 1fr;
 gap: .625rem;}
 
 /*Responsive. en móviles los botones se apilan*/
 @media (max-width:480px) {.buttons {grid-template-columns: 1fr;}}
+
+.containerindicadores {font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: #f5f5f5;
+display: flex;
+justify-content: center;
+max-width: 900px;
+padding: 20px;
+text-align: center;
+}
+
+.containerindicadores h1 {margin-bottom: 20px;}
+
+.grid {display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap: 20px;
+}
+
+.card {background: white;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {width: 120px;
+margin: 10px 0;
+}
+
 
 /*Header*/
 .headerIndex {
@@ -94,10 +128,6 @@ gap: .625rem;}
     border-radius: 1.25rem;    
 }
 
-.html{
-    font-size: 16px; /*16px - 1rem*/
-}
-
 .parrafoUno {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(../assets/img/imagen-principal.webp);
     background-size: cover;
@@ -133,8 +163,7 @@ a {
     color: black;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*  font-family: "Lobster Two", sans-serif;*/
+
 
 /*Barra de navegación*/
 .navbar {
@@ -182,7 +211,8 @@ h1 {
     font-size: 1.875rem;    
 }
 .produccionUno article p{
-    width: 40%;   
+    width: 100%;
+    max-width: 40ch;   
 }
 .produccionUno img {width: 50%; /*Ancho del logo*/  }
 
