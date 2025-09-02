@@ -12,7 +12,45 @@ rem, nos ayuda a trabajar el tama;o de fuentes en los dispositivos moviles.*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
+} 
+.body-iniciarsesion {font-family: Arial, sans-serif;
+background: #fff;
+color:#000;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1.25rem;
+}
+
+.container h1{ font-size: 32px;
+font-weight: bold;
+margin: 0;}
+
+.container form{display: grid;
+gap: .9375rem;}
+
+.container label {font-size: 12px;
+font-weight: bold;
+margin-bottom: 5px;}
+
+.container input{width: 100%;
+padding: 12px;
+border: 1px solid #ccc;}
+
+.container buttons{display: grid;
+grid-template-columns: 1fr 1fr;
+gap: .625rem;}
+
+/*Responsive. en móviles los botones se apilan*/
+@media (max-width:480px) {.buttons {grid-template-columns: 1fr;}}
+
 /*Header*/
 .headerIndex {
     /*Que ocupe el 100% del ancho de pantalla*/
