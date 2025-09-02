@@ -56,16 +56,21 @@ gap: .625rem;}
 /*Responsive. en móviles los botones se apilan*/
 @media (max-width:480px) {.buttons {grid-template-columns: 1fr;}}
 
-.containerindicadores {font-family: Arial, sans-serif;
+
+
+.body-indicadores {font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
 background: #f5f5f5;
 display: flex;
-justify-content: center;
+justify-content: center;}
+
+.containerindicadores {
 max-width: 900px;
 padding: 20px;
 text-align: center;
 }
+
 
 .containerindicadores h1 {margin-bottom: 20px;}
 
@@ -76,12 +81,23 @@ gap: 20px;
 
 .card {background: white;
 border-radius: 12px;
-padding: 20px;
+padding: 1rem;
 box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+text-align: center;
 }
 
 .card img {width: 120px;
-margin: 10px 0;
+    height: 120px;
+    object-fit: contain;
+margin: .5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 
