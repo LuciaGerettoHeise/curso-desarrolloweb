@@ -17,18 +17,21 @@ rem, nos ayuda a trabajar el tama;o de fuentes en los dispositivos moviles.*/
     box-sizing: border-box;
 } 
 
+body{
+    padding-top: 0px;
+}
 
 .body-iniciarsesion {font-family: Arial, sans-serif;
 background: #fff;
 color:#000;
-display: flex;
+display: block;
 justify-content: center;
-align-items: center;
 min-height: 100vh;}
 
 .container{
     max-width: 400px;
     width: 100%;
+    margin-top: 80px; /*empuja el formulario hacia abajo*/
     display: grid;
     grid-template-rows: auto auto 1fr;
     gap: 1.25rem;
@@ -72,7 +75,14 @@ text-align: center;
 }
 
 
-.containerindicadores h1 {margin-bottom: 20px;}
+.containerindicadores h1 {
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 .grid {display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -80,24 +90,26 @@ gap: 20px;
 }
 
 .card {background: white;
-border-radius: 12px;
-padding: 1rem;
-box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+border-radius: 24px;
+padding: 1.5rem;
+box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
 text-align: center;
+width: 350px;
+min-height: 250px;
 }
 
-.card img {width: 120px;
-    height: 120px;
+.card img {width: 140px;
+    height: 140px;
     object-fit: contain;
 margin: .5rem;
 }
 
-.card-container {
+.cards-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 3rem; /*espacio entre las cards*/
+    margin-top: 2rem; /*espacio debajo del navbar*/
 }
 
 
