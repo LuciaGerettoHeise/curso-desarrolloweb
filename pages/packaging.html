@@ -62,39 +62,43 @@
 
     <main>
         <section>
-            <div class="parrafoUno">
-                <img src="../assets/img/produccion-diaria.webp" alt="">
-                <div>
+              <section class="parrafoUno">
+                <article>
                     <!--Título principal de la pestaña de producción-->
-                    <h1>Producción Packaging</h1>
-                    <p>El día Jueves 07/08/2025 la producción a realizar es de 1440 unidades de ZZW17V. Cantidad de
-                        ollas
-                        = 16</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <!--Coloco un div para agrupar los 2 elementos-->
-                    <div class="parrafoCinco">
-                        <h3>Cantidades por fórmula por Olla</h3>
-                        <ol>INS004: 75g</ol>
-                        <ol>INS1422: 500g</ol>
-                        <ol>IN002: 41175g</ol>
-                        <ol>INS957: 1500g</ol>
+                    <h1>Producción</h1>
+                    <p>El día Jueves 07/08/2025 el packaging a realizar es de 240 unidades de A102B.</p>
+                </article>
+        </section>
+
+
+<!--Se define una clase-->
+          
+                <section class="packaging1">
+                    <!--Coloco un div para agrupar los 3 elementos-->
+                    <div class="info-packaging">
+                        <h3>Paso 1: Se comienza tomando una unidad de ZZA102B.</h3>
+                        <img src="../assets/img/oasispackaging1.png" alt="">
                     </div>
-                    <div class="parrafoSeis">
-                        <h3>Cantidades consumidas</h3>
+                    <div class="info-packaging">
+                        <h3>Paso 2: Se arma la caja y se coloca la unidad como se muestra en la imagen.</h3>
+                        <img src="../assets/img/oasispackaging2.png" alt="">
+                    </div>
+                    <div class="info-packaging">
+                        <h3>Paso 3: Se toman 8 unidades del producto terminado y se colocan en una caja bulto con etiqueta DUN14.</h3>
+                        <img src="../assets/img/oasispackaging3.png" alt="">
+                    </div>
+                </section>
+
+                    <div class="packaging2">
+                        <h3>Producción del dia</h3>
                         <div class="formulario">
-                            <!--Formulario para que el usuario pueda ingresar las cantidades consumidas.-->
+                            <!--Formulario para que el usuario pueda ingresar las cantidades producidas y rechazadas.-->
                             <form action="" method="post">
-                                <label for="">INS004 (g):</label>
-                                <input type="number" name="INS004" id="INS004">
-                                <label for="">INS1422 (g):</label>
-                                <input type="number" name="INS1422" id="INS1422">
-                                <label for="">IN002 (g):</label>
-                                <input type="number" name="IN002" id="IN002">
-                                <label for="">INS957 (g):</label>
-                                <input type="number" name="IN002" id="INS957">
+                                <label for="">Producidas:</label>
+                                <input type="number" name="Producidas" id="Producidas">
+                                <label for="">Rechazadas (g):</label>
+                                <input type="number" name="Rechazadas" id="Rechazadas">
+
                                 <!--Botón de enviar.-->
                                 <input type="submit" value="Confirmar Producción">
                             </form>

@@ -7,8 +7,7 @@ margin (margen con respecto a las otras etiquetas)*/
 % Podemos usarla en base al 100% del ancho de la pantalla
 rem, nos ayuda a trabajar el tama;o de fuentes en los dispositivos moviles.*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*  font-family: "Lobster Two", sans-serif;*/
+
 
 /*Se genera el reset*/
 *{
@@ -17,10 +16,204 @@ rem, nos ayuda a trabajar el tama;o de fuentes en los dispositivos moviles.*/
     box-sizing: border-box;
 } 
 
-body{
-    padding-top: 0px;
+/*Título principal*/
+h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-size: 3.125rem;
 }
 
+/*Parrafo principal del inicio*/
+.parrafoUno {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(../assets/img/packaging.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 31.25rem;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Segunda sección del inicio*/
+.parrafoDos {
+    text-align: center;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: .3125rem;
+}
+
+/*Eficiencia*/
+.parrafoDos h4 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+/*Caracteristicas claves del sistema de gestion*/ 
+.parrafoDos h2 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 1.875rem;
+}
+
+.parrafoDos p {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 1.5625rem;
+}
+
+/*flexbox del inicio*/
+.parrafoTres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*Se separa de forma equitativa tanto en los margenens como entre las cards.*/ 
+    justify-content: space-evenly;
+    height: 12.5rem;
+    /*Align me permite mover los elementos del contenedor de arriba hacia abajo*/
+    align-items: center; 
+}
+
+.info-pagina {
+    padding: 60px 10px;
+    border: 2px solid black;
+    border-radius: .3125rem;   
+    align-items: center;       /* centramos horizontalmente */
+    text-align: center;        /* centramos el texto */
+}
+/*Titulo de la pestaña de producción*/
+.produccionUno article {
+    width: 50%;   
+    align-self: center; 
+}
+.produccionUno article h1{
+    font-size: 1.875rem;    
+}
+.produccionUno article p{
+    width: 100%;
+    max-width: 40ch;   
+}
+.produccionUno img {width: 18.75rem; /*Ancho del logo*/  }
+
+/*Boton de iniciar producción*/
+.parrafoCuatro {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 1rem;
+    background-color: rgb(200, 207, 185);
+    /*box-model*/
+    padding: 6px 16px;
+    border: 2px solid black;
+    border-radius: .25rem;
+    display: block;
+    margin: 2rem auto 0 auto; 
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+/*Titulo principal de produccion*/
+.produccionUno {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*Cantidades de los insumos necesarios en producción.*/
+.parrafoCinco{flex: 1;
+max-width: 400px;}
+
+.parrafoCinco h3 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.parrafoCinco ol {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*Formulario para completar cantidades de insumos consumidos en producción y cantidades producidas en packaging.*/
+.parrafoSeis{flex: 1;
+max-width: 400px;}
+.parrafoSeis h3 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.formulario form{
+      display: flex;
+      flex-direction: column;
+    gap: 10px;
+}
+
+/*Titulo del parrafo*/
+.parrafoUno h1 {
+    text-align: left;
+}
+
+.parrafoUno p {
+    text-align: left;
+}
+
+/*Pasos para realizar el packaging*/
+.packaging1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*Se separa de forma equitativa tanto en los margenes como entre las cards.*/ 
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-packaging {
+    flex: 1 1 280px;
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: .5rem;    
+    width: 280px;
+    height: auto;
+    display: flex;             /* usamos flexbox */
+    flex-direction: column;    /* apilamos texto e imagen en columna */
+    justify-content: flex-start;   
+    align-items: center;       /* centramos horizontalmente */
+    text-align: center;        /* centramos el texto */
+    background: white;
+}
+
+.info-packaging img {
+    width: 100%;
+    max-width: 150px;          /* achica las imágenes */
+    height: auto;       
+    object-fit: contain;       /* mantiene proporciones */
+    margin-top: auto;
+}
+
+/*Formulario para completar con cantidades producidas*/ 
+.packaging2{ display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontal */
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Formato de pestaña iniciar sesion*/
 .body-iniciarsesion {font-family: Arial, sans-serif;
 background: #fff;
 color:#000;
@@ -28,6 +221,8 @@ display: block;
 justify-content: center;
 min-height: 100vh;}
 
+
+/*Formulario para iniciar sesion o para crear un perfil en la pestaña iniciar sesion.*/
 .container{
     max-width: 400px;
     width: 100%;
@@ -37,7 +232,7 @@ min-height: 100vh;}
     gap: 1.25rem;
 }
 
-.container h1{ font-size: 32px;
+.container h1{ font-size: 3.125rem;
 font-weight: bold;
 margin: 0;}
 
@@ -56,6 +251,11 @@ border: 1px solid #ccc;}
 grid-template-columns: 1fr 1fr;
 gap: .625rem;}
 
+
+
+
+
+
 /*Responsive. en móviles los botones se apilan*/
 @media (max-width:480px) {.buttons {grid-template-columns: 1fr;}}
 
@@ -73,7 +273,6 @@ max-width: 900px;
 padding: 20px;
 text-align: center;
 }
-
 
 .containerindicadores h1 {
     text-align: center;
@@ -113,83 +312,7 @@ margin: .5rem;
 }
 
 
-/*Header*/
-.headerIndex {
-    /*Que ocupe el 100% del ancho de pantalla*/
-    width: 100%;
-    background-color: rgba(220, 219, 165, 0.388);
-    position:fixed;
-    top: 0px;
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    /*Coloco los elementos uno al lado del otro*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.25rem;
-}
-/*Flexbox funciona con el concepto de padre e hijo. Se le va a aplicar a una etiqueta contenedora la propiedad flex y va a afectar unicamente a sus hijos directos.*/
-.logo-tcs{
-    width: 6.25rem; /*Ancho del logo*/  
-}
-.imagen-principal{
-    width: 100%; /*Ancho. Se utiliza % para que se ajuste al contenedor section-principal*/  
-}
-.parrafoTres{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*Se separa de forma equitativa tanto en los margenens como entre las cards.*/ 
-    justify-content: space-evenly;
-    height: 31.25rem;
-    background-color: lightblue;
-    /*Align me permite mover los elementos del contenedor de arriba hacia abajo*/
-    align-items: center; 
-}
 
-
-.info-pagina{
-    background-color: rgb(212, 255, 205);
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 1.25rem;    
-}
-
-.parrafoUno {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(../assets/img/imagen-principal.webp);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 31.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.parrafoDos {
-    text-align: center;
-    height: 18.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1.25rem;
-}
-
-.parrafoUno h1 {
-    text-align: left;
-}
-
-.parrafoUno p {
-    text-align: left;
-}
-
-/*Propiedades generales*/
-a {
-    text-decoration: none;
-    color: black;
-}
 
 
 
@@ -210,58 +333,19 @@ a {
 
 
 
-/*Título principal*/
-h1 {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-}
 
-/*Primer párrafo*/
-.produccionUno {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 400;
-    font-size: 1.125rem;
-}
 
-.produccionUno {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    border: 1px solid black;
-}
 
-.produccionUno article {
-    width: 50%;   
-    align-self: center; 
-}
-.produccionUno article h1{
-    font-size: 1.875rem;    
-}
-.produccionUno article p{
-    width: 100%;
-    max-width: 40ch;   
-}
-.produccionUno img {width: 50%; /*Ancho del logo*/  }
 
-/*Segundo párrafo*/
-.parrafoDos h4 {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-}
 
-.parrafoDos h2 {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-}
 
-.parrafoDos p {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
+.produccionDos{display: flex;
+    justify-content: center; /*centra el bloque entero*/
+align-items: flex-start; /*alinea arriba*/
+gap: 50px; /*espacio entre columnas*/
+margin-top: 2rem;}
+
+
 
 /*Tercer párrafo*/
 .parrafoTres h3 {
@@ -276,44 +360,10 @@ h1 {
     font-size: 14px;
 }
 
-/*Cuarto párrafo*/
-.parrafoCuatro {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 1.1875rem;
-    background-color: aqua;
-    /*box-model*/
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 1.875rem;
-    margin: 1.25rem;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
 
-/*Quinto párrafo*/
-.parrafoCinco h3 {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-}
 
-.parrafoCinco ol {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
 
-/*Sexto párrafo*/
-.parrafoSeis h3 {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-}
 
-.formulario {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
+
+
+
