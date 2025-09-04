@@ -45,7 +45,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: .3125rem;
+    margin: .5rem;
 }
 
 /*Eficiencia*/
@@ -144,6 +144,13 @@ max-width: 400px;}
     font-weight: 400;
     font-size: 14px;
 }
+
+/*box modeling para las cantidades necesarias de insumos y lo que realmente se consume en la pestaña de producción*/
+.produccionDos{display: flex;
+    justify-content: center; /*centra el bloque entero*/
+align-items: flex-start; /*alinea arriba*/
+gap: 50px; /*espacio entre columnas*/
+margin-top: 2rem;}
 
 /*Formulario para completar cantidades de insumos consumidos en producción y cantidades producidas en packaging.*/
 .parrafoSeis{flex: 1;
@@ -251,11 +258,6 @@ border: 1px solid #ccc;}
 grid-template-columns: 1fr 1fr;
 gap: .625rem;}
 
-
-
-
-
-
 /*Responsive. en móviles los botones se apilan*/
 @media (max-width:480px) {.buttons {grid-template-columns: 1fr;}}
 
@@ -311,54 +313,6 @@ margin: .5rem;
     margin-top: 2rem; /*espacio debajo del navbar*/
 }
 
-
-
-
-
-
-/*Barra de navegación*/
-.navbar {
-    list-style: none;
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    display: inline; /*Por defecto una etiqueta puede ser inline o block.
-    Inline son las etiquetas que por defecto solamente ocupan el espacio de su contenido dentro del documento.
-    Block son aquellas que ocupan el 100% del ancho en el documento.*/
-    display: flex;
-    gap: 1.25rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-.produccionDos{display: flex;
-    justify-content: center; /*centra el bloque entero*/
-align-items: flex-start; /*alinea arriba*/
-gap: 50px; /*espacio entre columnas*/
-margin-top: 2rem;}
-
-
-
-/*Tercer párrafo*/
-.parrafoTres h3 {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-}
-
-.parrafoTres p {
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
 
 
 
