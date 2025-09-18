@@ -1,0 +1,18 @@
+// Importar variables
+@use "base/variables" as *;
+
+// Importar layout
+@use "layout/header";
+@use "layout/footer";
+
+// Importar componentes
+@use "components/navbar";
+@use "components/buttons";
+@use "components/cards";
+
+// Importar páginas
+@use "pages/home";
+@use "pages/produccion";
+@use "pages/packaging";
+@use "pages/indicadores";
+@use "pages/iniciarsesion";

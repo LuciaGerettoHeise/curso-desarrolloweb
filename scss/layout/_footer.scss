@@ -1,0 +1,6 @@
+footer {
+  @include flex-center;
+  padding: 1rem;
+  background-color: $primary-color;
+  font-family: $font-title;
+}

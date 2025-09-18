@@ -1,0 +1,32 @@
+.packaging-page {
+  padding: 2rem;
+  background-color: $background-color;
+
+  h1 {
+    font-family: $font-title;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .packaging-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .packaging-card {
+    @extend .card; // Reutiliza el estilo general de cards
+    background-color: lighten($primary-color, 40%);
+    text-align: center;
+
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    h2 {
+      margin: 1rem 0;
+      color: darken($primary-color, 20%);
+    }
+  }
+}

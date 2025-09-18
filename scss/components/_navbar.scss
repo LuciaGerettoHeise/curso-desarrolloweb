@@ -1,0 +1,10 @@
+.navbar-nav {
+  .nav-link {
+    font-size: 1rem;
+    color: $text-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

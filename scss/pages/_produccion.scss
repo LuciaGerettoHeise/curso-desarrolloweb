@@ -1,0 +1,33 @@
+.produccionUno {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 1.125rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  article {
+    width: 50%;
+    align-self: center;
+
+    h1 {
+      font-size: 1.875rem;
+    }
+
+    p {
+      max-width: 40ch;
+    }
+  }
+
+  img {
+    width: 18.75rem;
+  }
+}
+
+.produccionDos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 2rem;
+}

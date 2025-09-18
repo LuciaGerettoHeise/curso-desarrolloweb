@@ -1,0 +1,13 @@
+// Flexbox centrado
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Responsive
+@mixin responsive($break) {
+  @media (max-width: $break) {
+    @content;
+  }
+}
