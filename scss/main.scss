@@ -1,5 +1,5 @@
 // Importar variables
-@use "base/variables" as *;
+@use "base/_variables" as *;
 
 // Importar layout
 @use "layout/header";
@@ -17,4 +17,3 @@
 @use "pages/indicadores";
 @use "pages/iniciarsesion";
 
-@use 'variables' as *; // importa todas las variables del archivo
