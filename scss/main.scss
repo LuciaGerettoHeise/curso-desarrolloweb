@@ -16,3 +16,5 @@
 @use "pages/packaging";
 @use "pages/indicadores";
 @use "pages/iniciarsesion";
+
+@use 'variables' as *; // importa todas las variables del archivo
