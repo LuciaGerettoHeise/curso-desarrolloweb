@@ -1,19 +1,18 @@
 // Importar variables
-@use "base/_variables" as *;
+@import "base/variables";
 
 // Importar layout
-@use "layout/header";
-@use "layout/footer";
+@import "layout/header";
+@import "layout/footer";
 
 // Importar componentes
-@use "components/navbar";
-@use "components/buttons";
-@use "components/cards";
+@import "components/navbar";
+@import "components/buttons";
+@import "components/cards";
 
 // Importar páginas
-@use "pages/home";
-@use "pages/produccion";
-@use "pages/packaging";
-@use "pages/indicadores";
-@use "pages/iniciarsesion";
-
+@import "pages/home";
+@import "pages/produccion";
+@import "pages/packaging";
+@import "pages/indicadores";
+@import "pages/iniciarsesion";
