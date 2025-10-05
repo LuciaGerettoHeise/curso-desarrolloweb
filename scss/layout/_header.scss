@@ -1,7 +1,15 @@
-@use "../base" as v;
+@use "../base/variables" as v;
 
-h1 {
-  font-family: v.$font-title;
-  font-weight: 700;
-  font-size: v.$h1-size;
+.header {
+  padding: 1rem;
+  text-align: center;
+
+  @media (min-width: v.$bp-tablet) {
+    padding: 2rem;
+    text-align: left;
+  }
+
+  @media (min-width: v.$bp-desktop) {
+    padding: 3rem 4rem;
+  }
 }
