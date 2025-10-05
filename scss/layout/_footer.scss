@@ -1,6 +1,6 @@
+@use "../base/variables" as v;
+
 footer {
-  @include flex-center;
-  padding: 1rem;
-  background-color: $primary-color;
-  font-family: $font-title;
+  font-family: v.$font-main;
+  color: v.$text-color;
 }
